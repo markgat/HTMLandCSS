@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Humidity vs. Latitude</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+        <link rel="stylesheet" href="setup.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bar">
+            <a class="navbar-brand" href="index.html">
+                <figure class="title" id="greenb">
+                    <b class="lat" id ="greenb" style="font-family:'Times New Roman', Times, serif;font-size: 30px">Latitude</b>
+                </figure>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto menu">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="temp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humid.html">Humidity</a>
+                            <a class="dropdown-item" href="cloud.html">Cloudiness</a>
+                            <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="compare.html">Comparison </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="flexed">
+                <figure class="summary overflow-auto">
+                    <b id="green" style="font-family:'Times New Roman', Times, serif;font-size: 40px;">
+                        Humidity<hr style="padding-bottom: 20px">
+                    </b>
+                    <img class="fullimg" src="Resources/assets/images/Fig2.png" alt="Lat vs Hum image">
+                    <!-- look into float property to flow in css -->
+                    <p>Based on our gathered data, it is difficult to point out any significant pattern relating to the equator or northern and 
+                        southern hemispheres. However, based on finer inspection, we see that the northern and southern hemispheres near the equator
+                        have relatively higher humidity averages (-20 to 0 and 40 to 60 degrees of latitude) as oppose to the humidity levels near the 0 to 40 
+                        degree latitude range. A general rule
+                        of relative humidity says that the percentage of humidity increases when the air is colder and decreases when the air becomes
+                        warmer. Following that logic, it would mean that the air near the equator is warmer than other areas. Explanations as to why 
+                        the humidity range widens and includes lower percentages towards the northern and southern <b>poles</b> would require further 
+                        inspection.
+                    </p>
+                </figure>
+                <figure class="vis overflow-auto">
+                    <b id="green" style="font-family:'Times New Roman', Times, serif;font-size: 30px;">
+                                Visualizations <hr style="padding-bottom: 20px">
+                    </b>
+                    <div>
+                    <!-- Add anchors -->
+                        <a href="temp.html"> <img class="vimg" src="Resources/assets/images/Fig1.png" alt="Lat vs Temp image"> </a>
+                        <a href="humid.html"> <img class="vimg" id="highlight" src="Resources/assets/images/Fig2.png" alt="Lat vs Hum image"> </a>
+                        <a href="cloud.html"> <img class="vimg" src="Resources/assets/images/Fig3.png" alt="Lat vs Cloud image"> </a>
+                        <a href="wind.html"> <img class="vimg" src="Resources/assets/images/Fig4.png" alt="Lat vs Wind Sp. image"> </a>
+                    </div>
+                </figure>
+            </div>
+            <footer>
+                    <figure class="bottom front">
+                            <p class="rights">&#9400; Copyright Coding Bootcamp 2019</p>
+                    </figure>
+                    <figure class="bottom back" id="greenb">
+                    </figure>
+                </footer>
+            <!-- Additional javascript files from bootstrap needed for functionality -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
