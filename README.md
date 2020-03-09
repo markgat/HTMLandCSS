@@ -9,4 +9,4 @@ Click [here](https://markgat.github.io/HTMLandCSS/) to access the application re
     $ git clone https://github.com/markgat/HTMLandCSS.git
     ````
 2) To access application locally, open ````index.html```` with browser
-3) Navigate the site or trend observation, graphed plots, and complete table of data collection!
+3) Navigate the site for trend observations, graphed plots, and a complete table of data collection!
